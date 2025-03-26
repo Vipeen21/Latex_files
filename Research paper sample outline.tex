@@ -1,0 +1,426 @@
+\documentclass{article} %This line specifies the document class as "article." The "article" class is a standard class for creating general-purpose documents like research papers.
+\usepackage{amsmath} %This line includes the "amsmath" package, which provides enhanced mathematical typesetting capabilities. It's essential for writing mathematical formulas and equations.
+\usepackage{graphicx} %This line includes the "graphicx" package, which allows you to include and manipulate images in your document.
+\usepackage{booktabs} %This line includes the "booktabs" package, which provides commands for creating high-quality tables, especially for scientific and technical documents.
+\usepackage{lipsum} % lipsum is use For dummy text
+
+\title{\textbf{Impact of Exchange Rate Volatility and Capital Formation in India since Liberalisation}}
+\author{Vipeen Kumar}
+\date{March 24, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The study examines the impact of exchange rate volatility on the gross capital formation in India from 1992 to 2023. The study uses VAR analysis and GARCH tests, to analyse the relationship between exchange rate volatility and capital formation. Exchange rate volatility is measured by the standard deviation of monthly exchange rate changes and capital formation is represented as gross fixed capital formation as a percentage of GDP. The findings suggest that a unidirectional relation between Exchange rate volatility and capital formation where the Exchange Rate Volatility negatively affects Capital Formation, with a stronger effect after one or two periods (lags 1 \& 2). This suggests that firms and investors respond to past volatility rather than immediate fluctuations. This implies that reducing exchange rate volatility might encourage more stable investment over time.
+\end{abstract}
+
+\textbf{Keywords:} Exchange Rate Volatility, Capital formation, VAR, IRF and GARCH
+
+\newpage
+
+\section{Introduction}
+The exchange rate plays a crucial role in an open economy like India, influencing trade flows, investment decisions, and overall macroeconomic stability. Following the liberalization reforms of the 1990s, India's economy became increasingly integrated with the global market, making it more susceptible to fluctuations in the exchange rate. Capital formation, a key driver of economic growth, is particularly vulnerable to these fluctuations. This study aims to analyze the impact of exchange rate volatility on capital formation in India during the post-liberalization period. This study examines the impact of exchange rate volatility on capital formation using historical data from 1992 to 2023. The analysis employs various econometric models, including the Augmented Dickey-Fuller (ADF) test, Vector Autoregression (VAR) and GARCH models, to understand the dynamic interplay between these economic variables. Understanding this relationship is critical for policy makers seeking to create a stable economic environment conducive.
+
+\section{Literature Review}
+The relationship between exchange rate volatility and macroeconomic variables, including capital
+formation, has been extensively studied.\par
+\textbf{Fatima et al. (2023)} investigate the impact of exchange rate volatility on foreign direct
+investment (FDI) inflows in India from 2000 to 2019, employing the MAKI cointegration
+approach to account for structural breaks. The findings reveal a negative but statistically
+insignificant relationship between exchange rate volatility and FDI, suggesting that volatility
+deters investment due to increased uncertainty among foreign investors.\par
+\textbf{Elian et al. (2024)} examined the impact of economic growth, exchange rate volatility, and the
+real exchange rate on Foreign Direct Investment (FDI) inflows to BRICS economies.
+Cointegration test and Granger Non-Causlity test were used to analyse the relationship.The
+results indicate that economic growth is a positive significant determinant of FDI inflows in
+both the short and long term, and exchange rate volatility and the real exchange rate have a
+negative insignificant impact on FDI inflows in the short run, with the exchange rate showing a
+positive significant link in the long run.\par
+\textbf{Ramakrishna (2005)} studied the impact of volatility in trade openness and capital inflows on
+the volatility of economic growth. A cointegration model has been used for Indian data to verify
+this. The evidence suggests that the volatility in capital inflow has a positive impact on growth
+volatility. The trade openness does not seem to increase volatility in economic growth.\par
+\textbf{Din et al. (2024)} examined the intricate relationships among exchange rate fluctuations,
+inflation, and economic growth within South Asian nations, namely Pakistan, India,
+Bangladesh, Sri Lanka, and Nepal from 1990 to 2021, GARCH (1,1) and Feasibly Generalized
+Least Squares (FGLS) regression model is applied . exchange rate volatility significantly and
+adversely influences economic growth. In contrast, inflation exhibits a statistically insignificant
+negative impact on economic growth.\par
+\textbf{Latief and Lefen (2018)} analysed the impact of exchange rate volatility on international trade
+and foreign direct investment in seven developing countries along the OBOR project from 1995
+to 2016. Results showed that exchange rate volatility significantly affects both trade and FDI in
+OBOR-related countries, negatively impacting economic theory.
+\par
+\textbf{Bhat et al. (2024)} examined the relationship between conditional exchange rate volatility and
+economic growth in BRICS countries using dynamic panel models, static panel models, and the
+Dumitrescu and Hurlin panel causality test. Results show that conditional exchange rate
+volatility has a negative and significant effect on economic growth. The causality test found
+unidirectional causality from exchange rate volatility, exports, labour force, and gross capital
+formation to economic growth.
+
+
+\section{Research Gaps}
+While existing literature has explored the relationship between exchange rate volatility and various
+macroeconomic variables, a comprehensive analysis of the impact of exchange rate volatility on
+capital formation in India using a combination of econometric techniques, including VAR and
+GARCH has not been, to the best of my knowledge.
+
+\section{Research Questions}
+\begin{itemize}
+    \item What is the impact of exchange rate volatility on capital formation in India during the post-liberalization period?
+    \item What are the short-run and long-run dynamics between exchange rate volatility and capital formation in India?
+\end{itemize}
+
+\section{Objectives}
+\begin{itemize}
+    \item To analyze the impact of exchange rate volatility on capital formation in India.
+    \item To examine the short-run and long-run dynamics between exchange rate volatility and capital formation using econometric techniques.
+\end{itemize}
+
+\section{Hypotheses}
+\begin{itemize}
+    \item H0: No impact of Exchange rate volatility on capital formation in India.
+\end{itemize}
+
+\section{Data Sources and Methodology}
+\subsection{Data Sources}
+Monthly Exchange rate data (USDINR) is collected from the RBI database on Indian
+Economy and annual Capital formation data in the form of Gross Fixed Capital Formation
+as a percentage of GDP is sourced from the World Bank. Time period of the analysis is 1992
+to 2023.
+
+\subsection{Methodology}
+Monthly exchange rate data will be converted to annual data using standard deviation to
+measure volatility. Data will be aligned and standardized. Augmented Dickey-Fuller
+(ADF) Test is performed to test for stationarity of the data, Autoregressive Distributed
+Lag (ARDL) Model is used to analyze the short-run and long-run relationship between
+exchange rate volatility and capital formation, GARCH Model is used to model exchange
+rate volatility and Granger Causality Test is used to determine the causal relationship
+between exchange rate volatility and capital formation.
+
+\section{Results and Findings}
+
+\subsection{Descriptive Statistics}
+Table 2 in appendix presents the summary statistics of
+the exchange rate volatility and capital
+formation data. Mean Exchange Rate Volatility is 1.403, with a standard deviation of 1.059, indicating moderate variation. The minimum volatility is 0.007, while the maximum is 4.397, suggesting occasional high fluctuations. The mean capital formation is 32.092\%, with a standard deviation of 5.208, showing significant variation. The minimum value is 22.716\%, and the maximum is 41.951\%, indicating fluctuations over time.
+The spread of capital formation values suggests an economy experiencing periods of both high and low investment rates. The exchange rate volatility's skewed nature (with a low minimum but a high maximum) suggests that extreme fluctuations occur sporadically rather than consistently.
+
+
+% needs to add skewness, kurtosis and correlation
+
+
+\subsection{Line Chart}
+
+
+Figure \ref{fig:line excrf} in appendix visualises Exchange Rate Volatility (blue line) and Capital Formation (orange line) over
+time. Capital Formation has a general upward trend from the early 1990s to around 2010, peaking above 40. After 2010, it exhibits some fluctuations but remains relatively high. Around 2015-2020, there is a noticeable decline, followed by a slight recovery. Exchange rate volatility remains
+relatively low throughout the period, staying below 5. There are some spikes, particularly around 2008-2010, and again around 2015-2020, indicating periods of increased exchange rate uncertainty. The fluctuations suggest that exchange rate volatility experiences periodic shocks but remains contained compared to capital formation. There is no clear inverse relationship at first glance. However, it appears that some peaks in volatility coincide with dips in capital formation. For example, around 2008-2010, exchange rate volatility increases while capital formation shows some variation.
+\subsection{Stationarity Test}
+The ADF test checks for stationarity in a time series. See Table 3 and Table 4 in appendix. The null hypothesis (H0 ) states that the series has a unit root (i.e., it is non-stationary). If the p-value is low (< 0.05), we reject the null hypothesis, meaning the series is stationary. Exchange Rate Volatility is Stationary at all significance levels (1\%, 5\%, 10\%). Since the p-value is very low (0.000194) and the ADF Statistic is smaller (more negative) than all critical values, we reject H0. This means
+Exchange Rate Volatility does not have a unit root and does not require differencing. Capital Formation is Stationary at the 5\% and 10\% significance levels, but not at 1\%. The p-value (0.0102) is below 0.05, so we reject H0 at the 5\% level. However, the ADF Statistic is not lower than the 1\% critical value, meaning the stationarity is not very strong. Since Capital Formation is stationary at the 5\% level, there's no need to take first differences.
+
+
+
+\subsection{VAR analysis}
+
+VAR results are depicted in Table 5,6,7 and 8. Lag 2 is the best choice for the VAR model based on AIC, FPE, and HQIC. Capital formation shows strong persistence, with both L1 and L2 being significant. Exchange rate volatility negatively affects capital formation, but weakly (L1 is marginally significant, L2 is not). No strong feedback from capital formation to exchange rate volatility, as its coefficients are not statistically significant. ExchangeRateVolatility and CapitalFormation have a negative residual correlation (-0.2658). This suggests that when exchange rate volatility is high, capital formation tends to be lower (and vice versa).
+
+See Figure \ref{fig:irf}. Exchange rate volatility negatively affects capital formation, suggesting that higher uncertainty discourages investment. Capital formation initially increases exchange rate volatility, but the effect is temporary. Capital formation has a self-reinforcing effect, meaning past investment drives future investment. Exchange rate volatility is mean-reverting and does not have long-term persistence.
+
+
+See Figure \ref{fig:fevd} Exchange Rate Volatility is somewhat influenced by Capital Formation over time, but it still explains most of its own forecast error variance. CapitalFormation is almost entirely self-determined, indicating that ExchangeRateVolatility does not significantly drive its forecast variance. This suggests that exchange rate volatility might have some feedback effect from capital formation, but capital formation remains largely independent in this model.
+
+
+See Figure \ref{fig:acf}. Autocorrelation function of squared exchange rate volatility shows the presence of Volatility Clustering – The significant autocorrelation at lag 5 suggests short-term dependence in squared exchange rate volatility. The pattern indicates that an ARCH/GARCH model might be appropriate for capturing volatility dynamics. Most lags fall within the confidence band, implying that volatility shocks may not last for extended periods.
+
+\subsection{GARCH Model Results}
+%$ used to shift from math to text and vice versa
+%$$ used to write math equation
+The output corresponds to a GARCH(1,1) model is given in Table 9,10 and 11 in appendix is used to capture the dynamic nature of Exchange Rate Volatility over time. High $\beta$ means that volatility is highly persistent i.e., shocks in volatility last for a long time. Recent shocks (ARCH term $\alpha$) have almost no impact, suggesting that the exchange rate volatility does not react strongly to immediate past movements. Insignificant mean model µ means exchange rate volatility does not have a significant deterministic trend. Since $\alpha + \beta  \approx 1$, volatility shocks do not decay which shows possible IGARCH behaviour which is common in financial time series.
+
+
+\section{Conclusion}
+
+The study explores the relationship between exchange rate volatility and gross capital formation in India, utilizing various econometric techniques, including stationarity tests, Vector Autoregression (VAR), and Generalized Autoregressive Conditional Heteroskedasticity (GARCH) modeling.
+A visual analysis of trends suggests that while capital formation generally follows an upward trajectory, it experiences periodic downturns, some of which coincide with spikes in exchange rate volatility. The VAR model, with an optimal lag length of two, suggests that past capital formation significantly influences its future values, indicating a self-reinforcing investment cycle. Exchange rate volatility negatively impacts capital formation, albeit weakly, while capital formation does not significantly drive exchange rate fluctuations, indicating a unidirectional relationship rather than a bidirectional one. The residual correlation between the two variables is negative, suggesting that higher exchange rate volatility is generally associated with lower investment levels.
+Impulse response and variance decomposition analyses further reinforce that capital formation is primarily self-determined, while exchange rate volatility does not substantially drive its forecast variance. Additionally, the autocorrelation function of squared exchange rate volatility indicates volatility clustering, suggesting that periods of high exchange rate uncertainty are often followed by similar periods.
+The GARCH(1,1) model confirms that exchange rate volatility exhibits persistent shocks, meaning uncertainty in the exchange rate tends to persist over time. The findings suggest that while exchange rate volatility plays a role in shaping capital formation, its impact is limited, and other macroeconomic factors likely have a more substantial influence on investment trends.
+
+These results provide important insights for policymakers. While stabilizing exchange rates may contribute to a more predictable investment environment, capital formation is largely self-driven. Future research could explore structural breaks, nonlinear relationships, and external economic shocks to gain a deeper understanding of this dynamic relationship.
+
+\newpage
+
+\begin{thebibliography}{9}
+    \bibitem{fatima2023} Fatima, E., Asif, M., Sharma, R. B., \& Chaudhary, A. (2023). Exchange rate volatility and its impact on FDI inflows in India using MAKI Cointegration approach. In Lecture notes in networks and systems (pp. 392–406). https://doi.org/10.1007/978-3-031-26953-0\_37
+    \bibitem{elian2024} Elian, M. I., Bani-Mustafa, A., Sawalha, N., Alsaber, A. R., \& Pan, J. (2024). Impact of economic growth and exchange rate volatility on FDI inflows: Cointegration and causality tests for the BRICS countries. International Journal of Economics and Financial Issues, 15(1), 42–54. https://doi.org/10.32479/ijefi.17311
+    \bibitem{ramakrishna2005} Ramakrishna, G. (2005). Volatility in trade openness, capital inflows and economic growth: the case of India. The IUP Journal of Financial Economics, 3, 7–18. https://econpapers.repec.org/article/icficfjfe/v\_3a03\_3ay\_3a2005\_3ai\_3a3\_3ap\_3a7-18.htm
+    \bibitem{din2024} Din, S., Din, H., Khan, I., \& Naheed, S. (2024). Nexus among Exchange Rate Volatility, Inflation, and Economic Growth: A Panel Data Analysis. Pakistan Journal of Humanities and Social Sciences, 12(1). https://doi.org/10.52131/pjhss.2024.v12i1.1815
+    \bibitem{latief2018} Latief, R., \& Lefen, L. (2018). The Effect of Exchange Rate Volatility on International Trade and Foreign Direct Investment (FDI) in Developing Countries along “One Belt and One Road.” International Journal of Financial Studies, 6(4), 86. https://doi.org/10.3390/ijfs6040086
+    \bibitem{bhat2024} Bhat, M. A., Jamal, A., \& Wani, F. (2024). The nexus between economic growth and conditional exchange rate volatility: evidence from emerging economies. Journal of Economic and Administrative Sciences. https://doi.org/10.1108/jeas-07-2023-0199
+\end{thebibliography}
+
+\newpage
+
+\appendix
+
+\section{Appendix}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Exchange Rate Volatility and Capital Formation}
+    \begin{tabular}{ccc}
+        \toprule
+        Year & Exchange Rate Volatility & Capital Formation \\
+        \midrule
+        1992 & 0.310775 & 27.440204 \\
+        1993 & 0.518336 & 22.716411 \\
+        1994 & 0.006513 & 26.310167 \\
+        1995 & 1.604664 & 29.152337 \\
+        1996 & 0.613992 & 22.759253 \\
+        1997 & 1.177967 & 25.692733 \\
+        1998 & 1.526343 & 24.975370 \\
+        1999 & 0.448067 & 30.958088 \\
+        2000 & 1.319252 & 25.677317 \\
+        2001 & 0.608319 & 29.907889 \\
+        2002 & 0.303070 & 30.251300 \\
+        2003 & 0.879695 & 30.839700 \\
+        2004 & 1.017504 & 35.096492 \\
+        2005 & 0.794521 & 37.428264 \\
+        2006 & 0.939043 & 38.998506 \\
+        2007 & 1.821158 & 41.950798 \\
+        2008 & 3.836190 & 38.422420 \\
+        2009 & 1.545021 & 39.256792 \\
+        2010 & 0.920846 & 39.785624 \\
+        2011 & 3.134756 & 39.590422 \\
+        2012 & 2.562920 & 38.347416 \\
+        2013 & 4.396707 & 34.023198 \\
+        2014 & 1.240520 & 34.267806 \\
+        2015 & 1.764843 & 32.116730 \\
+        2016 & 0.763026 & 30.172691 \\
+        2017 & 1.178970 & 30.982173 \\
+        2018 & 3.106636 & 32.343218 \\
+        2019 & 1.061752 & 30.096198 \\
+        2020 & 1.327433 & 28.922384 \\
+        2021 & 0.807465 & 32.115822 \\
+        2022 & 2.810483 & 33.023917 \\
+        2023 & 0.562986 & 33.319861 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Descriptive Statistics}
+    \begin{tabular}{lcc}
+        \toprule
+        Statistic & Exchange Rate Volatility & Capital Formation \\
+        \midrule
+        Count & 32.000 & 32.000 \\
+        Mean & 1.403 & 32.092 \\
+        Std Dev & 1.059 & 5.208 \\
+        Min & 0.007 & 22.716 \\
+        25\% & 0.726 & 29.095 \\
+        50\% & 1.120 & 31.549 \\
+        75\% & 1.645 & 35.679 \\
+        Max & 4.397 & 41.951 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+% ADF Test Results for Exchange Rate Volatility
+\begin{table}[h]
+    \centering
+    \caption{ADF Test: Exchange Rate Volatility}
+    \begin{tabular}{lc}
+        \toprule
+        Statistic & Value \\
+        \midrule
+        ADF Statistic & -4.503 \\
+        p-value & 0.000194 \\
+        Lags Used & 0 \\
+        Observations Used & 31 \\
+        Critical Value (1\%) & -3.661 \\
+        Critical Value (5\%) & -2.961 \\
+        Critical Value (10\%) & -2.619 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% ADF Test Results for Capital Formation
+\begin{table}[h]
+    \centering
+    \caption{ADF Test: Capital Formation}
+    \begin{tabular}{lc}
+        \toprule
+        Statistic & Value \\
+        \midrule
+        ADF Statistic & -3.422 \\
+        p-value & 0.0102 \\
+        Lags Used & 8 \\
+        Observations Used & 23 \\
+        Critical Value (1\%) & -3.753 \\
+        Critical Value (5\%) & -2.999 \\
+        Critical Value (10\%) & -2.639 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% VAR Model summary
+\begin{table}[h]
+    \centering
+    \caption{VAR Model Summary}
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Model:}    & VAR \\
+        \textbf{Method:}   & OLS \\
+        \textbf{Date:}     & Tue, 25 Mar 2025 \\
+        \textbf{Time:}     & 13:26:11 \\
+        \midrule
+        \textbf{No. of Equations:} & 2.00000 \\
+        \textbf{No. of Observations:} & 30.0000 \\
+        \textbf{Log Likelihood:} & -54.4008 \\
+        \textbf{AIC:} & -1.38236 \\
+        \textbf{BIC:} & -0.915299 \\
+        \textbf{HQIC:} & -1.23295 \\
+        \textbf{FPE:} & 0.252565 \\
+        \textbf{Det(Omega\_mle):} & 0.185558 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Regression Results for Exchange Rate Volatility}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Variable} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{t-Stat} & \textbf{Prob} \\
+        \midrule
+        Constant & 0.060422 & 0.165100 & 0.366 & 0.714 \\
+        L1.ExchangeRateVolatility & -0.117676 & 0.205316 & -0.573 & 0.567 \\
+        L1.CapitalFormation & 0.532002 & 0.298416 & 1.783 & 0.075 \\
+        L2.ExchangeRateVolatility & 0.044445 & 0.184891 & 0.240 & 0.810 \\
+        L2.CapitalFormation & 0.066449 & 0.345062 & 0.193 & 0.847 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Regression Results for Capital Formation}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Variable} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{t-Stat} & \textbf{Prob} \\
+        \midrule
+        Constant & 0.095374 & 0.091422 & 1.043 & 0.297 \\
+        L1.ExchangeRateVolatility & -0.190848 & 0.113692 & -1.679 & 0.093 \\
+        L1.CapitalFormation & 0.517332 & 0.165245 & 3.131 & 0.002 \\
+        L2.ExchangeRateVolatility & -0.158784 & 0.102382 & -1.551 & 0.121 \\
+        L2.CapitalFormation & 0.480278 & 0.191075 & 2.514 & 0.012 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Residual Correlation Matrix}
+    \begin{tabular}{lcc}
+        \toprule
+        & \textbf{Exchange Rate Volatility} & \textbf{Capital Formation} \\
+        \midrule
+        Exchange Rate Volatility & 1.000000 & -0.265774 \\
+        Capital Formation & -0.265774 & 1.000000 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% GARCH Model Results
+\begin{table}[h]
+    \centering
+    \caption{GARCH Model Summary}
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Dependent Variable:} & Exchange Rate Volatility \\
+        \textbf{R-squared:}          & 0.000 \\
+        \textbf{Mean Model:}         & Constant Mean \\
+        \textbf{Adj. R-squared:}     & 0.000 \\
+        \textbf{Volatility Model:}   & GARCH \\
+        \textbf{Log-Likelihood:}     & -45.1505 \\
+        \textbf{Distribution:}       & Normal \\
+        \textbf{AIC:}                & 98.3010 \\
+        \textbf{Method:}             & Maximum Likelihood \\
+        \textbf{BIC:}                & 104.164 \\
+        \textbf{No. of Observations:} & 32 \\
+        \textbf{Df Residuals:}       & 31 \\
+        \textbf{Df Model:}           & 1 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Mean Model Parameters}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Parameter} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{t-Stat} & \textbf{P-value} \\
+        \midrule
+        $\mu$ & -0.0415 & 0.151 & -0.276 & 0.783 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Volatility Model Parameters}
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Parameter} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{t-Stat} & \textbf{P-value} & \textbf{95\% Conf. Interval} \\
+        \midrule
+        $\omega$  & 0.0118  & 0.123   & 0.09621  & 0.923  & [ -0.229,  0.252] \\
+        $\alpha_1$ & 1.5543e-12  & 0.01716 & 9.058e-11  & 1.000 & [-0.03363, 0.03363] \\
+        $\beta_1$  & 1.0000  & 0.140   & 7.125   & 1.040e-12 & [ 0.725,  1.275] \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[h] % [h] means "here" (place it approximately here)
+  \centering
+  \includegraphics[width=1\textwidth]{line chart excrf.png} % Replace with your image file
+  \caption{Line chart of Exchange Rate Volatility and Capital Formation (Gross Capital Formation as \% of GDP)\\ Note: Author's computation }
+  \label{fig:line excrf} % Label for referencing the figure
+  %You can refer to Figure \ref{fig:my_image} in your text.
+\end{figure}
+
+\begin{figure}[h] % [h] means "here" (place it approximately here)
+  \centering
+  \includegraphics[width=1\textwidth]{irf.png} % Replace with your image file
+  \caption{Impulse Responses\\ Note: Author's computation }
+  \label{fig:irf} % Label for referencing the figure
+  %You can refer to Figure \ref{fig:my_image} in your text.
+\end{figure}
+
+\begin{figure}[h] % [h] means "here" (place it approximately here)
+  \centering
+  \includegraphics[width=1\textwidth]{fevd.png} % Replace with your image file
+  \caption{Forecast Error Variance Decomposition)\\ Note: Author's computation }
+  \label{fig:fevd} % Label for referencing the figure
+  %You can refer to Figure \ref{fig:my_image} in your text.
+\end{figure}
+
+\begin{figure}[h] % [h] means "here" (place it approximately here)
+  \centering
+  \includegraphics[width=1\textwidth]{acf sqerv.png} % Replace with your image file
+  \caption{Autocorrelation Function(ACF) of squared exchange rate volatility)\\ Note: Author's computation }
+  \label{fig:acf} % Label for referencing the figure
+  %You can refer to Figure \ref{fig:my_image} in your text.
+\end{figure}
+
+\end{document}

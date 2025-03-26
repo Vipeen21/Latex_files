@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{lipsum} % For dummy text
+\usepackage{setspace} % For line spacing
+\usepackage{tocloft} % For customizing table of contents
+\usepackage{hyperref} % For clickable links and references
+\usepackage{booktabs} % For better tables
+\usepackage{abstract} % For abstract environment
+\usepackage{fancyhdr} % For headers and footers
+
+% Geometry setup
+\geometry{a4paper, margin=1in}
+
+% Line spacing
+\onehalfspacing
+
+% Fancy headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage} % Page number on right header
+\fancyfoot[C]{} % Center footer
+
+% Customizing table of contents
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % Dots in ToC
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots in ToC sections
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % Dots in ToC subsections
+
+% Title page
+\title{Your Thesis Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+\lipsum[1-2] % Replace with your actual abstract
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Background}
+\label{sec:background}
+\lipsum[3-5]
+
+\section{Research Problem}
+\label{sec:problem}
+\lipsum[6-8]
+
+\section{Objectives}
+\label{sec:objectives}
+\lipsum[9-10]
+
+\section{Scope and Limitations}
+\label{sec:scope}
+\lipsum[11-12]
+
+\section{Thesis Structure}
+\label{sec:structure}
+\lipsum[13-14]
+
+\chapter{Literature Review}
+\label{chap:literature}
+
+\section{Theoretical Framework}
+\label{sec:theory}
+\lipsum[15-17]
+
+\section{Previous Studies}
+\label{sec:previous}
+\lipsum[18-20]
+
+\section{Research Gap}
+\label{sec:gap}
+\lipsum[21-22]
+
+\chapter{Methodology}
+\label{chap:methodology}
+
+\section{Research Design}
+\label{sec:design}
+\lipsum[23-25]
+
+\section{Data Collection}
+\label{sec:data}
+\lipsum[26-28]
+
+\section{Data Analysis}
+\label{sec:analysis}
+\lipsum[29-31]
+
+\chapter{Results and Findings}
+\label{chap:results}
+
+\section{Descriptive Statistics}
+\label{sec:descriptive}
+\lipsum[32-34]
+
+\section{Main Results}
+\label{sec:mainresults}
+\lipsum[35-37]
+
+\section{Interpretation}
+\label{sec:interpretation}
+\lipsum[38-40]
+
+\chapter{Discussion}
+\label{chap:discussion}
+
+\section{Discussion of Findings}
+\label{sec:discussionfindings}
+\lipsum[41-43]
+
+\section{Comparison with Previous Studies}
+\label{sec:comparison}
+\lipsum[44-46]
+
+\section{Implications}
+\label{sec:implications}
+\lipsum[47-49]
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+
+\section{Summary of Findings}
+\label{sec:summary}
+\lipsum[50-52]
+
+\section{Limitations of the Study}
+\label{sec:limitations}
+\lipsum[53-55]
+
+\section{Recommendations for Future Research}
+\label{sec:recommendations}
+\lipsum[56-58]
+
+\begin{thebibliography}{99}
+\bibitem{author1} Author 1, Title 1, Journal 1, Year 1.
+\bibitem{author2} Author 2, Title 2, Book 2, Year 2.
+% Add more references
+\end{thebibliography}
+
+\appendix
+
+\chapter{Appendix A: Data Tables}
+\label{app:data}
+\lipsum[59-61]
+
+\chapter{Appendix B: Figures}
+\label{app:figures}
+\lipsum[62-64]
+
+\end{document}
